@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distribuidora de Belleza del Norte</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            background-color: #D899D3; /* Fondo de toda la página */
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+
+        header {
+            background-color: #D899D3;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            color: white;
+            margin: 0;
+        }
+
+        header nav a {
+            text-decoration: none;
+            margin: 0 15px;
+            color: white;
+            font-size: 1.2rem;
+        }
+
+        header nav a:hover {
+            color: #F0C8ED;
+        }
+
+        
+        .banner-buttons {
+            text-align: center;
+            background-color: #F3E0F1;
+            padding: 15px 0;
+        }
+
+        .banner-buttons a {
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 10px 20px;
+            background-color: #D899D3;
+            color: white;
+            border-radius: 5px;
+            font-size: 1.2rem;
+        }
+
+        .banner-buttons a:hover {
+            background-color: #F0C8ED;
+        }
+
+        .main-content {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 40px;
+            background-color: #F3E0F1; 
+        }
+
+        .main-content img {
+            max-width: 500px;
+            margin-right: 2cm; //
+        }
+
+        .main-content .content {
+            max-width: 600px;
+        }
+
+        .main-content h2 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        .main-content h4 {
+            font-size: 1.5rem;
+            margin: 20px 0;
+        }
+
+        .main-content .button {
+            font-size: 1.2rem;
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: #D899D3;
+            color: white;
+            border-radius: 5px;
+        }
+
+        .icons-container {
+            display: flex;
+            justify-content: space-around;
+            padding: 30px;
+            background-color: #F3E0F1; 
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .icon-button {
+            background-color: #D899D3;
+            color: white;
+            border: none;
+            padding: 15px;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .icon-button i {
+            margin-right: 10px;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #D899D3;
+            min-width: 160px;
+            z-index: 1;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .dropdown-content a {
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #F0C8ED; 
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Distribuidora de Belleza del Norte</h1>
+       
+    </header>
+
+    <!-- Botones encima del banner -->
+    <div class="banner-buttons">
+        <a href="#acerca">Acerca de Nosotros</a>
+        <a href="#ubicacion">Ubicación</a>
+    </div>
+
+    <section id="banner" class="main-content">
+        <!-- Imagen de la mujer a la izquierda -->
+        <img class="illustration" src="images/Mujer.png" alt="Ilustración de mujer">
+        
+        <!-- Texto a la derecha -->
+        <div class="content">
+            <h2>Distribuidora de Belleza del Norte</h2>
+            <h4>Somos una empresa dedicada a la compra y venta de productos de maquillaje en mayoreo.</h4>
+            <a href="your-location-placeholder" class="button">Nuestra Ubicación</a>
+        </div>
+    </section>
+
+    <div class="icons-container">
+        <!-- Botón Uñas -->
+        <div class="dropdown">
+            <button class="icon-button">
+                <i class="fas fa-hand-sparkles"></i>
+                <span>Uñas</span>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">Mc nails</a>
+                <a href="#">Organic Nails</a>
+                <a href="#">Esmaltes gelish</a>
+                <a href="#">Coat</a>
+                <a href="#">Primer</a>
+                <a href="#">Tips</a>
+                <a href="#">Monomero</a>
+                <a href="#">Acrílicos</a>
+            </div>
+        </div>
+
+        <!-- Botón Herramientas de Estética (con tijeras) -->
+        <div class="dropdown">
+            <button class="icon-button">
+                <i class="fas fa-cut"></i>
+                <span>Herramientas de Estética</span>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">Tijeras para cortar cabello</a>
+                <a href="#">Alicates</a>
+                <a href="#">Corta uñas</a>
+                <a href="#">Brochas para pintar cabello</a>
+                <a href="#">Lámparas UV</a>
+                <a href="#">Corta tips</a>
+                <a href="#">Extensiones</a>
+                <a href="#">Guantes</a>
+            </div>
+        </div>
+
+        <!-- Botón Cabello -->
+        <div class="dropdown">
+            <button class="icon-button">
+                <i class="fas fa-tint"></i>
+                <span>Cabello</span>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">Kuul</a>
+                <a href="#">RBL</a>
+                <a href="#">Acondicionadores</a>
+                <a href="#">Peróxido</a>
+                <a href="#">Decolorante</a>
+                <a href="#">Shampoo</a>
+                <a href="#">Extractor de color</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+<!-- Footer -->
+<div style="background-color: #D899D3; padding: 20px 0; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; width: 100%; position: relative;">
+    <!-- Sección de contacto -->
+    <div style="flex: 1; min-width: 250px; text-align: left; margin: 10px;">
+        <h3 style="color: white;">Contáctanos</h3>
+        <p style="color: white; margin: 5px 0;">Mexico 913, Nuevo Progreso</p>
+        <p style="color: white; margin: 5px 0;">Tampico, Tamps., Tampico, Mexico</p>
+        <p style="color: white; margin: 5px 0;">Tel: 833 319 8702 </p>
+    </div>
+
+    <!-- Redes sociales -->
+    <div style="flex: 1; min-width: 200px; margin: 10px; text-align: center;">
+        <h3 style="color: white;">Síguenos</h3>
+        <a href="https://www.facebook.com/profile.php?id=100063617799004&mibextid=ZbWKwL" style="text-decoration: none; margin: 0 10px; color: #4267B2; font-size: 1.5rem;">
+            <i class="fab fa-facebook-square"></i>
+        </a>
+        <a href="https://www.instagram.com/distribuidoradelnorte?igsh=c2dsajQ3NjNxbWMw" style="text-decoration: none; margin: 0 10px; color: #C13584; font-size: 1.5rem;">
+            <i class="fab fa-instagram"></i>
+        </a>
+    </div>
+
+    <!-- Mapa -->
+    <div style="flex: 1; min-width: 300px; margin: 10px; text-align: right;">
+        <h3 style="color: white;">Encuéntranos</h3>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5118.7551801109685!2d-97.88468142362458!3d22.30557554270224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d7fb4f1430e233%3A0x3d00aca458f7fe80!2sDistribuidora%20de%20Belleza%20del%20Norte!5e1!3m2!1ses-419!2smx!4v1733374517970!5m2!1ses-419!2smx"
+            width="100%" height="150" style="border: 0;" allowfullscreen="" loading="lazy">
+        </iframe>
+    </div>
+</div>
+
+<!-- Derechos reservados -->
+<div style="background-color: #D899D3; font-size: 0.9rem; color: white; text-align: center; padding: 10px 0; width: 100%;">
+    <p>&copy; 2024 Distribuidora de Belleza del Norte. Todos los derechos reservados.</p>
+</div>
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
